@@ -1,0 +1,30 @@
+{
+  "name": "server-socket",
+  "version": "1.0.0",
+  "description": "https://hackernoon.com/enforcing-a-single-web-socket-connection-per-user-with-node-js-socket-io-and-redis-65f9eb57f66a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "nodemon server/index.js",
+    "start:web": "serve client"
+  },
+  "keywords": [
+    "node",
+    "Socket.IO",
+    "Redis"
+  ],
+  "author": "Johan Smal",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2",
+    "socket.io": "^2.2.0",
+    "socket.io-redis": "^5.2.0",
+    "socketio-auth": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "serve": "^11.0.2"
+  }
+}
